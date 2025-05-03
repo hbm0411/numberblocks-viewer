@@ -3,237 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="numberblocks-logo.png" type="image/png">
-    <title>Numberblocks 시청 가이드</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #fffaf0;
-            padding: 30px;
-            margin: 0;
-            text-align: center;
-        }
-
-        h2 {
-            color: #ff6f61;
-            font-size: 32px;
-            margin-bottom: 30px;
-        }
-
-        .tab {
-            display: flex;
-            justify-content: center;
-            gap: 12px;
-            margin-bottom: 30px;
-        }
-
-        .tab button {
-            background-color: #ffcccb;
-            border: none;
-            border-radius: 16px;
-            padding: 12px 24px;
-            font-size: 18px;
-            font-weight: bold;
-            color: #333;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
-        }
-
-        .tab button:hover {
-            background-color: #ffb6b6;
-            transform: scale(1.05);
-        }
-
-        .tab button.active {
-            background-color: #ff6f61;
-            color: white;
-        }
-
-        .tabcontent {
-            display: none;
-            padding: 20px;
-            border-top: none;
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-            gap: 30px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .thumbnail-card {
-            background-color: #fff;
-            border-radius: 20px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.2s, box-shadow 0.2s;
-            text-decoration: none;
-        }
-
-        .thumbnail-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        .thumbnail-card img {
-            width: 100%;
-            display: block;
-        }
-
-        .caption {
-            font-size: 16px;
-            color: #444;
-            font-weight: bold;
-            background-color: #ffe9ec;
-            padding: 12px 0;
-            border-top: none;
-        }
-    </style>
+    <title>NumberBlocks Episodes</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<h2>Numberblocks 시청 가이드</h2>
+<h2>NumberBlocks</h2>
 
 <div class="tab">
-    <button class="tablinks" onclick="openTab(event, 'Episodes1to10')" id="defaultOpen">1~10 에피소드</button>
-    <button class="tablinks" onclick="openTab(event, 'Episodes11to20')">11~20 에피소드</button>
-    <button class="tablinks" onclick="openTab(event, 'RecommendedEpisodes')">추천 에피소드</button>
+    <button class="tab-links" onclick="openTab(event, 'Episodes1to10')" id="defaultOpen">1~10 에피소드</button>
+    <button class="tab-links" onclick="openTab(event, 'Episodes11to20')">11~20 에피소드</button>
 
 </div>
 
-<div id="Episodes1to10" class="tabcontent">
-    <div class="grid-container">
-        <a class="thumbnail-card" href="https://www.youtube.com/watch?v=jVeYnCehEFE" target="_blank">
-            <img src="https://img.youtube.com/vi/jVeYnCehEFE/mqdefault.jpg" alt="One">
-            <div class="caption">1. One</div>
-        </a>
-        <a class="thumbnail-card" href="https://www.youtube.com/watch?v=aJzaNIpbUZo" target="_blank">
-            <img src="https://img.youtube.com/vi/aJzaNIpbUZo/mqdefault.jpg" alt="Two">
-            <div class="caption">2. Two</div>
-        </a>
-        <a class="thumbnail-card" href="https://www.youtube.com/watch?v=6-duQqX5ECs" target="_blank">
-            <img src="https://img.youtube.com/vi/6-duQqX5ECs/mqdefault.jpg" alt="Three">
-            <div class="caption">3. Three</div>
-        </a>
-        <a class="thumbnail-card" href="https://www.youtube.com/watch?v=Wafr8h4EsXg" target="_blank">
-            <img src="https://img.youtube.com/vi/Wafr8h4EsXg/mqdefault.jpg" alt="Four">
-            <div class="caption">4. Four</div>
-        </a>
-        <a class="thumbnail-card" href="https://www.youtube.com/watch?v=0kWAGGBd_Zs" target="_blank">
-            <img src="https://img.youtube.com/vi/0kWAGGBd_Zs/mqdefault.jpg" alt="Five">
-            <div class="caption">5. Five</div>
-        </a>
-        <a class="thumbnail-card" href="https://www.youtube.com/watch?v=X5Q18PkuLtM" target="_blank">
-            <img src="https://img.youtube.com/vi/X5Q18PkuLtM/mqdefault.jpg" alt="Six">
-            <div class="caption">6. Six</div>
-        </a>
-        <a class="thumbnail-card" href="https://www.youtube.com/watch?v=NVJ7uXC1tYU" target="_blank">
-            <img src="https://img.youtube.com/vi/NVJ7uXC1tYU/mqdefault.jpg" alt="Seven">
-            <div class="caption">7. Seven</div>
-        </a>
-        <a class="thumbnail-card" href="https://www.youtube.com/watch?v=4DBmy4sOFis" target="_blank">
-            <img src="https://img.youtube.com/vi/4DBmy4sOFis/mqdefault.jpg" alt="Eight">
-            <div class="caption">8. Eight</div>
-        </a>
-        <a class="thumbnail-card" href="https://www.youtube.com/watch?v=5hGh6rqH4U4" target="_blank">
-            <img src="https://img.youtube.com/vi/5hGh6rqH4U4/mqdefault.jpg" alt="Nine">
-            <div class="caption">9. Nine</div>
-        </a>
-        <a class="thumbnail-card" href="https://www.youtube.com/watch?v=ZNNUo-uQYwQ" target="_blank">
-            <img src="https://img.youtube.com/vi/ZNNUo-uQYwQ/mqdefault.jpg" alt="Ten">
-            <div class="caption">10. Ten</div>
-        </a>
-    </div>
+<div id="Episodes1to10" class="tab-content">
+    <div class="grid-container" id="grid-1to10"></div>
 </div>
 
-<div id="Episodes11to20" class="tabcontent">
-    <div class="grid-container">
-        <a class="thumbnail-card" href="https://www.youtube.com/watch?v=GAnqKyp7tkQ" target="_blank">
-            <img src="https://img.youtube.com/vi/GAnqKyp7tkQ/mqdefault.jpg" alt="Eleven">
-            <div class="caption">11. Eleven</div>
-        </a>
-        <a class="thumbnail-card" href="https://www.youtube.com/watch?v=cgJ_DkVo1oU" target="_blank">
-            <img src="https://img.youtube.com/vi/cgJ_DkVo1oU/mqdefault.jpg" alt="Twelve">
-            <div class="caption">12. Twelve</div>
-        </a>
-        <a class="thumbnail-card" href="https://www.youtube.com/watch?v=zkJmnN6ueoM" target="_blank">
-            <img src="https://img.youtube.com/vi/zkJmnN6ueoM/mqdefault.jpg" alt="Thirteen">
-            <div class="caption">13. Thirteen</div>
-        </a>
-        <a class="thumbnail-card" href="https://www.youtube.com/watch?v=61_2TfOC2mU" target="_blank">
-            <img src="https://img.youtube.com/vi/61_2TfOC2mU/mqdefault.jpg" alt="Fourteen">
-            <div class="caption">14. Fourteen</div>
-        </a>
-        <a class="thumbnail-card" href="https://www.youtube.com/watch?v=cYzSgFQnhO4" target="_blank">
-            <img src="https://img.youtube.com/vi/cYzSgFQnhO4/mqdefault.jpg" alt="Fifteen">
-            <div class="caption">15. Fifteen</div>
-        </a>
-        <a class="thumbnail-card" href="https://www.youtube.com/watch?v=55XmdJy9zjE" target="_blank">
-            <img src="https://img.youtube.com/vi/55XmdJy9zjE/mqdefault.jpg" alt="Sixteen">
-            <div class="caption">16. Sixteen</div>
-        </a>
-        <a class="thumbnail-card" href="https://www.youtube.com/watch?v=BfRzPIoyR_A" target="_blank">
-            <img src="https://img.youtube.com/vi/BfRzPIoyR_A/mqdefault.jpg" alt="Seventeen">
-            <div class="caption">17. Seventeen</div>
-        </a>
-        <a class="thumbnail-card" href="https://www.youtube.com/watch?v=_Se2qTzp1Dw" target="_blank">
-            <img src="https://img.youtube.com/vi/_Se2qTzp1Dw/mqdefault.jpg" alt="Eighteen">
-            <div class="caption">18. Eighteen</div>
-        </a>
-        <a class="thumbnail-card" href="https://www.youtube.com/watch?v=LGNiocFTyBQ" target="_blank">
-            <img src="https://img.youtube.com/vi/LGNiocFTyBQ/mqdefault.jpg" alt="Nineteen">
-            <div class="caption">19. Nineteen</div>
-        </a>
-        <a class="thumbnail-card" href="https://www.youtube.com/watch?v=4az0yAwmUH4" target="_blank">
-            <img src="https://img.youtube.com/vi/4az0yAwmUH4/mqdefault.jpg" alt="Twenty">
-            <div class="caption">20. Twenty</div>
-        </a>
-    </div>
+<div id="Episodes11to20" class="tab-content">
+    <div class="grid-container" id="grid-11to20"></div>
 </div>
 
-<div id="RecommendedEpisodes" class="tabcontent">
-    <div class="grid-container">
-        <a class="thumbnail-card" href="https://www.youtube.com/watch?v=GAnqKyp7tkQ" target="_blank">
-            <img src="https://img.youtube.com/vi/GAnqKyp7tkQ/mqdefault.jpg" alt="Just Add One">
-            <div class="caption">Just Add One</div>
-        </a>
-        <a class="thumbnail-card" href="https://www.youtube.com/watch?v=cgJ_DkVo1oU" target="_blank">
-            <img src="https://img.youtube.com/vi/cgJ_DkVo1oU/mqdefault.jpg" alt="Counting Sheep">
-            <div class="caption">Counting Sheep</div>
-        </a>
-        <a class="thumbnail-card" href="https://www.youtube.com/watch?v=zkJmnN6ueoM" target="_blank">
-            <img src="https://img.youtube.com/vi/zkJmnN6ueoM/mqdefault.jpg" alt="Double Trouble">
-            <div class="caption">Double Trouble</div>
-        </a>
-        <a class="thumbnail-card" href="https://www.youtube.com/watch?v=61_2TfOC2mU" target="_blank">
-            <img src="https://img.youtube.com/vi/61_2TfOC2mU/mqdefault.jpg" alt="Odds and Evens">
-            <div class="caption">Odds and Evens</div>
-        </a>
-        <a class="thumbnail-card" href="https://www.youtube.com/watch?v=cYzSgFQnhO4" target="_blank">
-            <img src="https://img.youtube.com/vi/cYzSgFQnhO4/mqdefault.jpg" alt="Numberblock Castle">
-            <div class="caption">Numberblock Castle</div>
-        </a>
-    </div>
-</div>
-
-<script>
-    function openTab(evt, tabName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(tabName).style.display = "block";
-        evt.currentTarget.className += " active";
-    }
-
-    document.getElementById("defaultOpen").click();
-</script>
+<script src="assets/js/episode-data.js"></script>
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>
