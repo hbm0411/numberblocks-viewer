@@ -7,23 +7,45 @@ function renderEpisodes(containerId, episodeList) {
         const card = document.createElement('div');
         card.className = 'thumbnail-card';
 
-        const videoWrapper = document.createElement('div');
-        videoWrapper.className = 'video-wrapper';
-
-        const iframe = document.createElement('iframe');
-        iframe.src = `https://www.youtube.com/embed/${ep.videoId}?rel=0&modestbranding=1`;
-        iframe.title = ep.title;
-        iframe.allow =
-            'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-        iframe.allowFullscreen = true;
-
-        videoWrapper.appendChild(iframe);
-        card.appendChild(videoWrapper);
+        const img = document.createElement('img');
+        img.src = `https://img.youtube.com/vi/${ep.videoId}/hqdefault.jpg`;
+        img.alt = ep.title;
+        card.appendChild(img);
 
         const caption = document.createElement('div');
         caption.className = 'caption';
         caption.textContent = ep.title;
         card.appendChild(caption);
+
+        card.addEventListener('click', function () {
+            const fullscreenContainer = document.createElement('div');
+            fullscreenContainer.className = 'video-wrapper';
+
+            const closeButton = document.createElement('button');
+            closeButton.textContent = '×';
+            closeButton.className = 'close-button';
+            closeButton.addEventListener('click', () => {
+                if (document.fullscreenElement) {
+                    document.exitFullscreen().catch(console.error);
+                }
+                fullscreenContainer.remove();
+            });
+
+            const iframe = document.createElement('iframe');
+            iframe.src = `https://www.youtube.com/embed/${ep.videoId}?autoplay=1&modestbranding=1&rel=0`;
+            iframe.allow = 'autoplay; fullscreen';
+            iframe.allowFullscreen = true;
+            iframe.setAttribute('frameborder', '0');
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+
+            fullscreenContainer.appendChild(closeButton);
+            fullscreenContainer.appendChild(iframe);
+            document.body.appendChild(fullscreenContainer);
+
+            fullscreenContainer.requestFullscreen().catch(console.error);
+        });
+
         container.appendChild(card);
     });
 }
