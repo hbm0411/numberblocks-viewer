@@ -65,8 +65,10 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
 }
 
+/* 탭 추가 */
 document.addEventListener('DOMContentLoaded', function () {
     renderEpisodes('grid-1to10', episodes1to10);
+    renderEpisodes('grid-season1', theRestOfSeason1);
     renderEpisodes('grid-11to20', episodes11to20);
     document.getElementById("defaultOpen").click();
 });
