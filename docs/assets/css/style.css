@@ -130,3 +130,20 @@ h2 {
 .close-button:hover {
     transform: scale(1.1);
 }
+
+.site-footer {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #888;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+}
+
+.site-footer a {
+    color: #666;
+    text-decoration: underline;
+}
+.site-footer a:hover {
+    color: #000;
+}
