@@ -1,6 +1,6 @@
 /* 참고: https://www.learningblocks.tv/numberblocks/episodes */
 
-const episodes1to10 = [
+window.episodes1to10 = [
     {title: "1. One", videoId: "jVeYnCehEFE"},
     {title: "Another One", videoId: "DD9jLCIfOxo"},
     {title: "2. Two", videoId: "aJzaNIpbUZo"},
@@ -19,7 +19,7 @@ const episodes1to10 = [
     {title: "Hiccups", videoId: "yk4NteouHdI"},
 ];
 
-const theRestOfSeason1 = [
+window.theRestOfSeason1 = [
     {title: "Three Little Pigs", videoId: "A7NkxeXizIw"},
     {title: "Off We Go!", videoId: "te8erla0MwM"},
     {title: "How to Count", videoId: "hm7u8ekL4OY"},
