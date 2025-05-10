@@ -1,7 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #fffaf0;
-    padding: 30px;
     margin: 0;
     text-align: center;
 }
@@ -9,6 +8,12 @@ body {
 h2 {
     color: #ff6f61;
     font-size: 32px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    color: #ffcccb;
+    margin-top: 5px;
     margin-bottom: 30px;
 }
 
