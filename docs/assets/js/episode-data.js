@@ -33,3 +33,16 @@ window.theRestOfSeason1 = [
     {title: "Fruit Salad", videoId: "NtQplzWz-uQ"},
     {title: "Zero", videoId: "LtmpIjNnqsI"},
 ];
+
+window.episodes11to20 = [
+    {title: "11. Eleven", videoId: "TozH7t_cymc"},
+    {title: "12. Twelve", videoId: "TnCmfAdbWv8"},
+    {title: "13. Thirteen", videoId: "oaKd5Q9HLIQ"},
+    {title: "14. Fourteen", videoId: "2lrGQZlhWQ8"},
+    {title: "15. Fifteen", videoId: "mkm2CYsmKLA"},
+    {title: "16. Sixteen", videoId: "01ATSHhxwCc"},
+    {title: "17. Seventeen", videoId: "sCp3G8mfc5k"},
+    {title: "18. Eighteen", videoId: "pcjFevMr3ls"},
+    {title: "19. Nineteen", videoId: "uve3OfKdUrk"},
+    {title: "20. Twenty", videoId: "UCg3H-2nWAw"},
+];
