@@ -162,9 +162,10 @@ h3 {
 
 /* --- 사이드 메뉴 & 메인 컨텐츠 레이아웃 --- */
 .side-nav {
-    width: 200px;
-    background: #fff0f5;
-    border-right: 1px solid #ffe9ec;
+    width: 100px;
+    min-width: 100px;
+    background: none;
+    border-right: none;
     padding: 0;
     min-height: 100vh;
     position: fixed;
@@ -174,33 +175,52 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 1px 0 8px 0 rgba(255, 204, 203, 0.08);
 }
 .side-nav ul {
     list-style: none;
     padding: 0;
-    margin: 40px 0 0 0;
+    margin: 32px 0 0 0;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
 }
 .side-nav li {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
 }
 .series-btn {
-    width: 100%;
+    width: 84px;
+    height: 84px;
     background: none;
     border: none;
-    padding: 18px 0;
-    font-size: 20px;
-    font-weight: bold;
-    color: #ff6f61;
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: none;
     cursor: pointer;
-    border-radius: 0 20px 20px 0;
-    transition: background 0.2s, color 0.2s;
 }
 .series-btn.active, .series-btn:focus {
     background: #ffcccb;
-    color: #fff;
+    box-shadow: 0 0 0 4px #ffe9ec;
     outline: none;
+}
+.side-logo {
+    width: 72px;
+    height: 72px;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 50%;
+    background: white;
 }
 
 .main-content {
@@ -208,10 +228,15 @@ h3 {
     flex-direction: column;
     flex: 1 1 auto;
     min-height: 100vh;
-    margin-left: 200px;
+    margin-left: 100px;
     width: 100%;
-    padding: 0 20px;
+    padding: 0 10px;
     box-sizing: border-box;
+}
+
+.series-btn.active .side-logo,
+.series-btn:focus .side-logo {
+    filter: brightness(0.95) drop-shadow(0 0 4px #ffcccb);
 }
 
 @media (max-width: 700px) {
@@ -219,29 +244,32 @@ h3 {
         flex-direction: column;
     }
     .side-nav {
-        position: static;
-        width: 100%;
-        min-height: unset;
         flex-direction: row;
-        border-right: none;
-        border-bottom: 1px solid #ffe9ec;
-        justify-content: center;
+        width: 100vw;
+        min-width: unset;
+        min-height: unset;
+        height: 80px;
+        position: static;
+        border-bottom: none;
+        box-shadow: 0 1px 8px 0 rgba(255, 204, 203, 0.08);
     }
     .side-nav ul {
-        display: flex;
         flex-direction: row;
         margin: 0;
         width: 100%;
-        justify-content: center;
+        gap: 8px;
     }
     .side-nav li {
         margin: 0 5px;
         width: auto;
     }
     .series-btn {
-        border-radius: 20px 20px 0 0;
-        padding: 12px 18px;
-        font-size: 16px;
+        width: 48px;
+        height: 48px;
+    }
+    .side-logo {
+        width: 36px;
+        height: 36px;
     }
     .main-content {
         margin-left: 0;
