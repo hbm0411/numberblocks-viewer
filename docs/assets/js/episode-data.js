@@ -46,3 +46,9 @@ window.episodes11to20 = [
     {title: "19. Nineteen", videoId: "uve3OfKdUrk"},
     {title: "20. Twenty", videoId: "UCg3H-2nWAw"},
 ];
+
+window.peppaPigEpisodes = {
+    season1: [
+        { title: "Episode 1 - Muddy Puddles", videoId: "79pairHvNXw" }
+    ]
+};

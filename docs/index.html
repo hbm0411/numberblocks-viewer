@@ -9,39 +9,52 @@
 </head>
 <body>
 
-<h2>NumberBlocks</h2>
-<h3></h3>
+<!-- 사이드 메뉴 Start -->
+<nav class="side-nav" aria-label="시리즈 선택">
+    <ul>
+        <li><button class="series-btn" data-series="numberblocks" aria-label="NumberBlocks 시리즈 보기">NumberBlocks</button></li>
+        <li><button class="series-btn" data-series="peppapig" aria-label="Peppa Pig 시리즈 보기">Peppa Pig</button></li>
+    </ul>
+</nav>
+<!-- 사이드 메뉴 End -->
 
-<!-- 탭 버튼 Start -->
-<div class="tab">
-    <button class="tab-links" onclick="openTab(event, 'Episodes1to10')" id="defaultOpen">1-10 Episodes</button>
-    <button class="tab-links" onclick="openTab(event, 'TheRestOfSeason1')">The rest of Season 1</button>
-    <button class="tab-links" onclick="openTab(event, 'Episodes11to20')">11-20 Episodes</button>
-</div>
-<!-- 탭 버튼 End -->
-
-<!-- 탭 별 카드 Start -->
-<div id="Episodes1to10" class="tab-content">
-    <div class="grid-container" id="grid-1to10"></div>
-</div>
-
-<div id="TheRestOfSeason1" class="tab-content">
-    <div class="grid-container" id="grid-season1"></div>
-</div>
-
-<div id="Episodes11to20" class="tab-content">
-    <div class="grid-container" id="grid-11to20"></div>
+<div class="main-content" id="main-content">
+    <div id="numberblocks-section">
+        <!-- 탭 버튼 Start -->
+        <div class="tab">
+            <button class="tab-links" onclick="openTab(event, 'Episodes1to10')" id="defaultOpen">1-10 Episodes</button>
+            <button class="tab-links" onclick="openTab(event, 'TheRestOfSeason1')">The rest of Season 1</button>
+            <button class="tab-links" onclick="openTab(event, 'Episodes11to20')">11-20 Episodes</button>
+        </div>
+        <!-- 탭 버튼 End -->
+        <!-- 탭 별 카드 Start -->
+        <div id="Episodes1to10" class="tab-content">
+            <div class="grid-container" id="grid-1to10"></div>
+        </div>
+        <div id="TheRestOfSeason1" class="tab-content">
+            <div class="grid-container" id="grid-season1"></div>
+        </div>
+        <div id="Episodes11to20" class="tab-content">
+            <div class="grid-container" id="grid-11to20"></div>
+        </div>
+    </div>
+    <div id="peppa-section" style="display:none;">
+        <div class="tab">
+            <button class="tab-links active" onclick="openTab(event, 'PeppaSeason1')" id="peppaDefaultOpen">Season 1</button>
+        </div>
+        <div id="PeppaSeason1" class="tab-content" style="display:block;">
+            <div class="grid-container" id="grid-peppa1"></div>
+        </div>
+    </div>
+    <footer class="site-footer">
+        Based on <a href="https://www.youtube.com/@PeppaPigCartoonCollection" target="_blank" rel="noopener noreferrer">
+        Peppa Pig Cartoon Collection official page</a>
+    </footer>
 </div>
 
 <script src="assets/js/episode-data.js"></script>
 <script src="assets/js/common.js"></script>
 <script src="assets/js/iframe-mode.js"></script>
-
-<footer class="site-footer">
-    Based on <a href="https://www.learningblocks.tv/numberblocks/episodes" target="_blank" rel="noopener noreferrer">
-    NumberBlocks official page</a>
-</footer>
-
 
 </body>
 </html>

@@ -67,7 +67,7 @@ function openInIframe(ep) {
 
 document.addEventListener('DOMContentLoaded', function () {
     renderEpisodes(window.episodes1to10, 'grid-1to10', openInIframe);
-    renderEpisodes(window.theRestOfSeason1, 'grid-season1', openInIframe);
     renderEpisodes(window.episodes11to20, 'grid-11to20', openInIframe);
+    renderEpisodes(window.theRestOfSeason1, 'grid-season1', openInIframe);
     document.getElementById("defaultOpen").click();
 });
