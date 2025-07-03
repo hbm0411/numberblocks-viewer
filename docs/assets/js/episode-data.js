@@ -49,6 +49,13 @@ window.episodes11to20 = [
 
 window.peppaPigEpisodes = {
     season1: [
-        { title: "Episode 1 - Muddy Puddles", videoId: "79pairHvNXw" }
-    ]
+        { "title": "1. Muddy Puddles", "videoId": "jEJqg4f92wQ" },
+        { "title": "2. Mr Dinosaur is Lost", "videoId": "YZRrwnhZ7s4" },
+        { "title": "3. Best Friend", "videoId": "6Z6_GjAOdHo" },
+        { "title": "4. Polly Parrot", "videoId": "3AldxtaqBYg" },
+        { "title": "5. Hide and Seek", "videoId": "6R5QvTcYrNA" },
+        { "title": "6. The Playgroup", "videoId": "97YQs93tcuA" },
+        { "title": "7. Mummy Pig at Work", "videoId": "S1LhcrOuMJI" },
+        { "title": "8. Piggy in the Middle", "videoId": "suU-ckpe0sM" }
+      ]
 };
