@@ -25,14 +25,63 @@ function openInIframe(ep) {
 
     // API 준비 시 플레이어 생성
     function createPlayer() {
+        // origin 설정을 안전하게 처리
+        const currentOrigin = window.location.origin || window.location.protocol + '//' + window.location.hostname + (window.location.port ? ':' + window.location.port : '');
+        
+        // playerVars 객체 생성
+        const playerVars = {
+            autoplay: 0,  // 자동재생 비활성화 (권한 정책 준수)
+            modestbranding: 0,  // 브랜딩 표시 (안정성 향상)
+            rel: 0,  // 관련 동영상 비표시
+            controls: 1,  // 컨트롤 표시
+            showinfo: 0,  // 동영상 정보 숨김
+            iv_load_policy: 3,  // 주석 비표시
+            cc_load_policy: 0,  // 자막 비표시
+            fs: 1,  // 전체화면 버튼 표시
+            enablejsapi: 1  // JavaScript API 활성화
+        };
+        
+        // 로컬 파일 시스템이 아닌 경우에만 origin 설정
+        if (currentOrigin !== 'null' && currentOrigin !== 'file://') {
+            playerVars.origin = currentOrigin;
+        }
+        
         new YT.Player(playerId, {
             videoId: ep.videoId,
-            playerVars: {
-                autoplay: 1,
-                modestbranding: 1,
-                rel: 0
-            },
+            playerVars: playerVars,
             events: {
+                'onReady': function (event) {
+                    // 사용자 상호작용 후 재생 시작 (권한 정책 준수)
+                    setTimeout(() => {
+                        try {
+                            event.target.playVideo();
+                        } catch (error) {
+                            console.log('자동재생이 차단되었습니다. 사용자가 재생 버튼을 클릭해주세요.');
+                            // 자동재생이 차단된 경우 사용자에게 안내
+                            const playButton = document.createElement('button');
+                            playButton.textContent = '▶ 재생하기';
+                            playButton.style.cssText = `
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                background: #ff0000;
+                                color: white;
+                                border: none;
+                                padding: 15px 30px;
+                                border-radius: 25px;
+                                font-size: 18px;
+                                cursor: pointer;
+                                z-index: 1001;
+                            `;
+                            playButton.addEventListener('click', () => {
+                                event.target.playVideo();
+                                playButton.remove();
+                            });
+                            fullscreenContainer.appendChild(playButton);
+                        }
+                    }, 100);
+                },
                 'onStateChange': function (event) {
                     if (event.data === YT.PlayerState.ENDED) {
                         // 영상이 끝나면 닫기
@@ -41,6 +90,36 @@ function openInIframe(ep) {
                         }
                         fullscreenContainer.remove();
                     }
+                },
+                'onError': function (event) {
+                    console.error('YouTube 플레이어 에러:', event.data);
+                    // 에러 발생 시 사용자에게 알림
+                    const errorDiv = document.createElement('div');
+                    errorDiv.style.cssText = `
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        background: rgba(0,0,0,0.8);
+                        color: white;
+                        padding: 20px;
+                        border-radius: 10px;
+                        text-align: center;
+                        z-index: 1000;
+                    `;
+                    errorDiv.innerHTML = `
+                        <h3>동영상을 재생할 수 없습니다</h3>
+                        <p>이 동영상은 현재 재생할 수 없습니다.</p>
+                        <button onclick="this.parentElement.remove()" style="
+                            background: #ff0000;
+                            color: white;
+                            border: none;
+                            padding: 10px 20px;
+                            border-radius: 5px;
+                            cursor: pointer;
+                        ">닫기</button>
+                    `;
+                    fullscreenContainer.appendChild(errorDiv);
                 }
             }
         });
@@ -65,9 +144,13 @@ function openInIframe(ep) {
     }
 }
 
+// openInIframe 함수를 window 객체에 추가
+window.openInIframe = openInIframe;
+
 document.addEventListener('DOMContentLoaded', function () {
     renderEpisodes(window.episodes1to10, 'grid-1to10', openInIframe);
     renderEpisodes(window.episodes11to20, 'grid-11to20', openInIframe);
     renderEpisodes(window.theRestOfSeason1, 'grid-season1', openInIframe);
+    renderEpisodes(window.peppaPigEpisodes.season1, 'grid-peppa1', openInIframe);
     document.getElementById("defaultOpen").click();
 });

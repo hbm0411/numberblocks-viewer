@@ -42,7 +42,6 @@ window.initSeriesMenu = function () {
     const seriesBtns = document.querySelectorAll('.series-btn');
     const numberblocksSection = document.getElementById('numberblocks-section');
     const peppaSection = document.getElementById('peppa-section');
-    let peppaRendered = false;
 
     function showSeries(series) {
         seriesBtns.forEach(btn => btn.classList.remove('active'));
@@ -59,12 +58,6 @@ window.initSeriesMenu = function () {
             if (numberblocksSection) numberblocksSection.style.display = 'none';
             if (peppaSection) {
                 peppaSection.style.display = '';
-                if (!peppaRendered && window.peppaPigEpisodes) {
-                    window.renderEpisodes(window.peppaPigEpisodes.season1, 'grid-peppa1', function(ep) {
-                        window.openPeppaPigEpisode && window.openPeppaPigEpisode(ep);
-                    });
-                    peppaRendered = true;
-                }
                 // Peppa Pig로 이동 시 Season 1 탭 자동 선택
                 const peppaDefaultTabBtn = document.getElementById('peppaDefaultOpen');
                 if (peppaDefaultTabBtn) peppaDefaultTabBtn.click();
@@ -89,5 +82,3 @@ window.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-// Peppa Pig 카드 클릭 시 iframe 재생 연결
-window.openPeppaPigEpisode = window.openInIframe;
