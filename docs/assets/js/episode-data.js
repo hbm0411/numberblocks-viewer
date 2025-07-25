@@ -2,24 +2,21 @@
 
 window.episodes1to10 = [
     {title: "1. One", videoId: "jVeYnCehEFE"},
-    {title: "Another One", videoId: "DD9jLCIfOxo"},
     {title: "2. Two", videoId: "aJzaNIpbUZo"},
     {title: "3. Three", videoId: "6-duQqX5ECs"},
-    {title: "One, Two, Three!", videoId: "Hj66zCFDf4w"},
     {title: "4. Four", videoId: "Wafr8h4EsXg"},
-    {title: "Flatland", videoId: "YA9sJ1RIdu0"},
     {title: "5. Five", videoId: "0kWAGGBd_Zs"},
-    {title: "Hide and Seek", videoId: "VVJycOrUOpU"},
     {title: "6. Six", videoId: "X5Q18PkuLtM"},
-    {title: "Counting Sheep", videoId: "YoQJhjO-5vg"},
     {title: "7. Seven", videoId: "NVJ7uXC1tYU"},
     {title: "8. Eight", videoId: "4DBmy4sOFis"},
     {title: "9. Nine", videoId: "5hGh6rqH4U4"},
     {title: "10. Ten", videoId: "ZNNUo-uQYwQ"},
-    {title: "Hiccups", videoId: "yk4NteouHdI"},
+    {title: "0.Zero", videoId: "LtmpIjNnqsI"},
 ];
 
-window.theRestOfSeason1 = [
+window.theRestOfLevel1 = [
+    {title: "Another One", videoId: "DD9jLCIfOxo"},
+    {title: "One, Two, Three!", videoId: "Hj66zCFDf4w"},
     {title: "Three Little Pigs", videoId: "A7NkxeXizIw"},
     {title: "Off We Go!", videoId: "te8erla0MwM"},
     {title: "How to Count", videoId: "hm7u8ekL4OY"},
@@ -27,11 +24,41 @@ window.theRestOfSeason1 = [
     {title: "The Whole of Me", videoId: "ZF9qjIWjgoM"},
     {title: "The Terrible Twos", videoId: "0S7M4TnMqDU"},
     {title: "Holes", videoId: "pL6dGSC73HE"},
+    {title: "Hide and Seek", videoId: "VVJycOrUOpU"},
     {title: "Once Upon a Time", videoId: "xnHUf9zqU_U"},
     {title: "Blockzilla", videoId: "Ii3E4zLEAuU"},
     {title: "The Numberblocks Express", videoId: "9UxTopiIUvM"},
     {title: "Fruit Salad", videoId: "NtQplzWz-uQ"},
-    {title: "Zero", videoId: "LtmpIjNnqsI"},
+];
+
+window.theRestOfLevel2 = [
+    { title: "Just Add One", videoId: "0CDfUsGo7_s"},
+    {title: "The Green Bottles", videoId: "ty5eI_ZU0UY"},
+    {title: "Counting Sheep", videoId: "YoQJhjO-5vg"},
+    {title: "Double Trouble", videoId: "5wkF6eLG8uk"},
+    {title: "Blast Off!", videoId: "4s4n-G6lWTs"},
+    {title: "Numberblocks Castle", videoId: "fYGhFcJEeZs"},
+    {title: "Numberblock Rally", videoId: "rB9Xs0DR864"},
+    {title: "Octoblock To The Rescue!", videoId: "FRGaDEmb4tI"},
+    {title: "Pattern Palace", videoId: "Ev0TbEfkMCU"},
+    /* 
+    {title: "The Three Threes", videoId: ""},
+    {title: "Odds and Evens", videoId: ""},
+    {title: "Fluffies", videoId: ""},
+    {title: "The Two Tree", videoId: ""},
+    {title: "Now We Are Six to Ten", videoId: ""},
+    {title: "Numberblobs", videoId: ""},
+    {title: "Building Blocks", videoId: ""},
+    {title: "Peekaboo!", videoId: ""},
+    {title: "Hiccups", videoId: "yk4NteouHdI"},
+    {title: "What's The Difference?", videoId: ""},
+    {title: "Five and Friends", videoId: ""},
+    {title: "Ten Again", videoId: ""},
+    {title: "Flatland", videoId: "YA9sJ1RIdu0"},
+    {title: "The Legend of Big Tum", videoId: ""},
+    {title: "Mirror, Mirror", videoId: ""},
+    {title: "The Wrong Number", videoId: ""}, 
+    */
 ];
 
 window.episodes11to20 = [
