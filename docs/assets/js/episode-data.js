@@ -72,6 +72,9 @@ window.episodes11to20 = [
     {title: "18. Eighteen", videoId: "pcjFevMr3ls"},
     {title: "19. Nineteen", videoId: "uve3OfKdUrk"},
     {title: "20. Twenty", videoId: "UCg3H-2nWAw"},
+    {title: "25. Twenty Five", videoId: "5j8zQFn9hgE"},
+    {title: "50. Fifty", videoId: "UjdzGWkK9pI"},
+    {title: "100. One Hundred", videoId: "eHFsbZU2xlg"},
 ];
 
 window.peppaPigEpisodes = {
