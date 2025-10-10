@@ -86,10 +86,20 @@ window.episodes11to100 = [
     {title: "19. Nineteen", videoId: "uve3OfKdUrk"},
     {title: "20. Twenty", videoId: "UCg3H-2nWAw"},
     {title: "21. Twenty One and On", videoId: "4oNk81e-C6k"},
-    {title: "25. Twenty Five", videoId: "Xpi8AsQ23PE"},
-    {title: "50. Fifty", videoId: "UjdzGWkK9pI"},
+    {title: "25. How Many Sleeps 'til Christmas", videoId: "Xpi8AsQ23PE"},
+    // {title: "50. Fifty", videoId: "UjdzGWkK9pI"},
+    {title: "50. Fifty", videoId: "cZO74TaoOWs"}, // sing-along
     {title: "60. Sixty's High Score", videoId: "unPI3HruIWE"},
     {title: "100. One Hundred", videoId: "eHFsbZU2xlg"},
+];
+
+window.specialAdventures = [
+    {title: "Octoblock Superhero Music Video", videoId: "KlLMhM2oqYg"}, 
+    {title: "Four On The Floor", videoId: "L8pXlMXbLBo"}, 
+    {title: "Fun Times One Times Table", videoId: "AgA8v1LkhG8"}, // sing-along
+    // {title: "Two Times Shoe Shop", videoId: "MYVeEh4ncuE"}, 
+    {title: "Two Times Table", videoId: "PGHjzT4X080"}, // sing-along
+    {title: "Super Eights Assemble", videoId: "kC5C1mx7pto"}, 
 ];
 
 window.peppaPigEpisodes = {

@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css?v=1.0.3">
+    <link rel="stylesheet" href="assets/css/style.css?v=1.0.4">
     <script src="https://www.youtube.com/iframe_api"></script>
 </head>
 <body>
@@ -35,6 +35,7 @@
             <button class="tab-links" onclick="openTab(event, 'TheRestOfLevel1')">Level 1</button>
             <button class="tab-links" onclick="openTab(event, 'TheRestOfLevel2')">Level 2</button>
             <button class="tab-links" onclick="openTab(event, 'Episodes11to100')">11-100 Episodes</button>
+            <button class="tab-links" onclick="openTab(event, 'SpecialAdventures')">🌟</button>
             
         </div>
         <!-- 탭 버튼 End -->
@@ -50,6 +51,9 @@
         </div>
         <div id="Episodes11to100" class="tab-content">
             <div class="grid-container" id="grid-11to100"></div>
+        </div>
+        <div id="SpecialAdventures" class="tab-content">
+            <div class="grid-container" id="grid-special-adventures"></div>
         </div>
         <footer class="site-footer">
             Based on <a href="https://www.learningblocks.tv/numberblocks/episodes" target="_blank" rel="noopener noreferrer">
@@ -75,7 +79,7 @@
 <script>
 // 스마트 캐시 관리 스크립트
 (function() {
-    const CURRENT_VERSION = '1.0.3';
+    const CURRENT_VERSION = '1.0.4';
     const STORAGE_KEY = 'numberblocks_version';
     
     // 저장된 버전 확인
@@ -130,9 +134,9 @@
     checkAndReload();
 })();
 </script>
-<script src="assets/js/episode-data.js?v=1.0.3"></script>
-<script src="assets/js/common.js?v=1.0.3"></script>
-<script src="assets/js/iframe-mode.js?v=1.0.3"></script>
+<script src="assets/js/episode-data.js?v=1.0.4"></script>
+<script src="assets/js/common.js?v=1.0.4"></script>
+<script src="assets/js/iframe-mode.js?v=1.0.4"></script>
 
 </body>
 </html>
