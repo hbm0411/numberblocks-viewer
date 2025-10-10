@@ -11,7 +11,7 @@ window.episodes1to10 = [
     {title: "8. Eight", videoId: "4DBmy4sOFis"},
     {title: "9. Nine", videoId: "5hGh6rqH4U4"},
     {title: "10. Ten", videoId: "ZNNUo-uQYwQ"},
-    {title: "0.Zero", videoId: "LtmpIjNnqsI"},
+    {title: "0. Zero", videoId: "LtmpIjNnqsI"},
 ];
 
 window.theRestOfLevel1 = [
@@ -27,8 +27,10 @@ window.theRestOfLevel1 = [
     {title: "Hide and Seek", videoId: "VVJycOrUOpU"},
     {title: "Once Upon a Time", videoId: "xnHUf9zqU_U"},
     {title: "Blockzilla", videoId: "Ii3E4zLEAuU"},
-    {title: "The Numberblocks Express", videoId: "9UxTopiIUvM"},
     {title: "Fruit Salad", videoId: "NtQplzWz-uQ"},
+    {title: "The Numberblocks Express", videoId: "9UxTopiIUvM"},
+    {title: "How Many Smoothies?", videoId: "HGM2aJANpu0"},
+    
 ];
 
 window.theRestOfLevel2 = [
@@ -36,32 +38,43 @@ window.theRestOfLevel2 = [
     {title: "The Green Bottles", videoId: "ty5eI_ZU0UY"},
     {title: "Counting Sheep", videoId: "YoQJhjO-5vg"},
     {title: "Double Trouble", videoId: "5wkF6eLG8uk"},
+    {title: "The Three Threes", videoId: "https://youtu.be/P_ygz3__zwk"},
+    {title: "Odds and Evens", videoId: "https://youtu.be/9reaNpOoFO0"},
+    {title: "Fluffies", videoId: "https://youtu.be/jbZtfe2CT5c"},
     {title: "Blast Off!", videoId: "4s4n-G6lWTs"},
+    {title: "The Two Tree", videoId: "https://youtu.be/F6wHFOGv05E"},
     {title: "Numberblocks Castle", videoId: "fYGhFcJEeZs"},
-    {title: "Numberblock Rally", videoId: "rB9Xs0DR864"},
-    {title: "Octoblock To The Rescue!", videoId: "FRGaDEmb4tI"},
-    {title: "Pattern Palace", videoId: "Ev0TbEfkMCU"},
+    {title: "Now We Are Six to Ten", videoId: "https://youtu.be/uAuf7o4AkeA"},
+    {title: "Numberblobs", videoId: "https://youtu.be/fng05gvXr9c"},
+    {title: "Building Blocks", videoId: "https://youtu.be/iFvpDuT6d9I"},
+    {title: "Peekaboo!", videoId: "https://youtu.be/AAvZQsppeLE"},
     {title: "Hiccups", videoId: "yk4NteouHdI"},
+    {title: "What's The Difference?", videoId: "https://youtu.be/BBiEs04U7g0"},
+    {title: "Numberblock Rally", videoId: "rB9Xs0DR864"},
+    {title: "Five and Friends", videoId: "https://youtu.be/gUnU4hUqeR0"},
+    {title: "Octoblock To The Rescue!", videoId: "FRGaDEmb4tI"},
+    {title: "Ten Again", videoId: "https://youtu.be/xd4KfYY_fCs"},
     {title: "Flatland", videoId: "YA9sJ1RIdu0"},
-    /* 
-    {title: "The Three Threes", videoId: ""},
-    {title: "Odds and Evens", videoId: ""},
-    {title: "Fluffies", videoId: ""},
-    {title: "The Two Tree", videoId: ""},
-    {title: "Now We Are Six to Ten", videoId: ""},
-    {title: "Numberblobs", videoId: ""},
-    {title: "Building Blocks", videoId: ""},
-    {title: "Peekaboo!", videoId: ""},
-    {title: "What's The Difference?", videoId: ""},
-    {title: "Five and Friends", videoId: ""},
-    {title: "Ten Again", videoId: ""},
+    {title: "Pattern Palace", videoId: "Ev0TbEfkMCU"},
+
+/*
     {title: "The Legend of Big Tum", videoId: ""},
     {title: "Mirror, Mirror", videoId: ""},
     {title: "The Wrong Number", videoId: ""}, 
-    */
+    {title: "Leap Blob", videoId: ""}, 
+    {title: "Ice and Dice", videoId: ""}, 
+    {title: "Go Go Domino", videoId: ""}, 
+    {title: "Ten in the Bed", videoId: ""}, 
+    {title: "", videoId: ""}, 
+    {title: "", videoId: ""}, 
+    {title: "", videoId: ""}, 
+    {title: "", videoId: ""}, 
+    {title: "", videoId: ""}, 
+    {title: "", videoId: ""}, 
+*/
 ];
 
-window.episodes11to20 = [
+window.episodes11to100 = [
     {title: "11. Eleven", videoId: "TozH7t_cymc"},
     {title: "12. Twelve", videoId: "TnCmfAdbWv8"},
     {title: "13. Thirteen", videoId: "oaKd5Q9HLIQ"},
@@ -72,8 +85,10 @@ window.episodes11to20 = [
     {title: "18. Eighteen", videoId: "pcjFevMr3ls"},
     {title: "19. Nineteen", videoId: "uve3OfKdUrk"},
     {title: "20. Twenty", videoId: "UCg3H-2nWAw"},
+    {title: "21. Twenty One and On", videoId: "4oNk81e-C6k"},
     {title: "25. Twenty Five", videoId: "Xpi8AsQ23PE"},
     {title: "50. Fifty", videoId: "UjdzGWkK9pI"},
+    {title: "60. Sixty's High Score", videoId: "unPI3HruIWE"},
     {title: "100. One Hundred", videoId: "eHFsbZU2xlg"},
 ];
 

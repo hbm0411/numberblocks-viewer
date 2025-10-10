@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function () {
     renderEpisodes(window.episodes1to10, 'grid-1to10', openInIframe);
     renderEpisodes(window.theRestOfLevel1, 'grid-level1', openInIframe);
     renderEpisodes(window.theRestOfLevel2, 'grid-level2', openInIframe);
-    renderEpisodes(window.episodes11to20, 'grid-11to20', openInIframe);
+    renderEpisodes(window.episodes11to100, 'grid-11to100', openInIframe);
     renderEpisodes(window.peppaPigEpisodes.season1, 'grid-peppa1', openInIframe);
     document.getElementById("defaultOpen").click();
 });
