@@ -95,11 +95,16 @@ window.episodes11to100 = [
 
 window.specialAdventures = [
     {title: "Octoblock Superhero Music Video", videoId: "KlLMhM2oqYg"}, 
-    {title: "Four On The Floor", videoId: "L8pXlMXbLBo"}, 
-    {title: "Fun Times One Times Table", videoId: "AgA8v1LkhG8"}, // sing-along
-    // {title: "Two Times Shoe Shop", videoId: "MYVeEh4ncuE"}, 
-    {title: "Two Times Table", videoId: "PGHjzT4X080"}, // sing-along
-    {title: "Super Eights Assemble", videoId: "kC5C1mx7pto"}, 
+    {title: "1. Fun Times One Times Table", videoId: "AgA8v1LkhG8"}, // sing-along
+    {title: "2. Two Times Table", videoId: "PGHjzT4X080"}, // sing-along
+    {title: "3. Circus of Threes", videoId: "O7ksWrvSn5k"},
+    {title: "4. Four On The Floor", videoId: "L8pXlMXbLBo"}, 
+    {title: "5. Sky High Fives", videoId: "jEC-xeM4gio"}, 
+    {title: "6. Remix the Sixes", videoId: "MT_byjHRC78"}, 
+    {title: "7. Sail the Seven Seas", videoId: "mkyI5Aww1GQ"}, 
+    {title: "8. Super Eights Assemble", videoId: "kC5C1mx7pto"}, 
+    {title: "9. Nine's Time to Shine", videoId: "qbjaIN2xrx4"}, 
+    {title: "10. Heroes with Zeroes", videoId: "mtcTEOWcPTA"}, 
 ];
 
 window.peppaPigEpisodes = {
