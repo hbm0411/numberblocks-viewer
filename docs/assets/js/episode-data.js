@@ -56,6 +56,7 @@ window.theRestOfLevel2 = [
     {title: "Ten Again", videoId: "xd4KfYY_fCs"},
     {title: "Flatland", videoId: "YA9sJ1RIdu0"},
     {title: "Pattern Palace", videoId: "Ev0TbEfkMCU"},
+    {title: "The Way of the Rectangle", videoId: "0sLzpCGgc40"},
 
 /*
     {title: "The Legend of Big Tum", videoId: ""},

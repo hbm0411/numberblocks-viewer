@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 버전 업데이트 스크립트
-# 사용법: ./scripts/update-version.sh 1.0.2
+# 사용법: ./scripts/update-version.sh 1.0.6
 
 if [ $# -eq 0 ]; then
     echo "사용법: $0 <새버전>"
