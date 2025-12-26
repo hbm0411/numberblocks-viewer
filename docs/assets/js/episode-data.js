@@ -56,7 +56,7 @@ window.theRestOfLevel2 = [
     {title: "Ten Again", videoId: "xd4KfYY_fCs"},
     {title: "Flatland", videoId: "YA9sJ1RIdu0"},
     {title: "Pattern Palace", videoId: "Ev0TbEfkMCU"},
-    {title: "The Way of the Rectangle", videoId: "0sLzpCGgc40"},
+    {title: "The Way of the Rectangle", videoId: "PcCXuqmvfWM"},
 
 /*
     {title: "The Legend of Big Tum", videoId: ""},
@@ -91,7 +91,7 @@ window.episodes11to100 = [
     // {title: "50. Fifty", videoId: "UjdzGWkK9pI"},
     {title: "50. Fifty", videoId: "cZO74TaoOWs"}, // sing-along
     {title: "60. Sixty's High Score", videoId: "unPI3HruIWE"},
-    {title: "100. One Hundred", videoId: "eHFsbZU2xlg"},
+    {title: "100. One Hundred", videoId: "l9-liPFndl8"},
 ];
 
 window.specialAdventures = [

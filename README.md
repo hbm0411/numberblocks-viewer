@@ -13,7 +13,7 @@
 
 ### 방법 1: 쉘 스크립트 사용 (Mac/Linux)
 ```bash
-./scripts/update-version.sh 1.0.2
+./scripts/update-version.sh 1.0.7
 ```
 
 ### 방법 2: 수동 업데이트
