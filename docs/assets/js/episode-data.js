@@ -27,14 +27,13 @@ window.theRestOfLevel1 = [
     {title: "Hide and Seek", videoId: "VVJycOrUOpU"},
     {title: "Once Upon a Time", videoId: "xnHUf9zqU_U"},
     {title: "Blockzilla", videoId: "Ii3E4zLEAuU"},
-    {title: "Fruit Salad", videoId: "NtQplzWz-uQ"},
     {title: "The Numberblocks Express", videoId: "9UxTopiIUvM"},
+    {title: "Fruit Salad", videoId: "NtQplzWz-uQ"},
     {title: "How Many Smoothies?", videoId: "HGM2aJANpu0"},
-    
 ];
 
 window.theRestOfLevel2 = [
-    { title: "Just Add One", videoId: "0CDfUsGo7_s"},
+    {title: "Just Add One", videoId: "0CDfUsGo7_s"},
     {title: "The Green Bottles", videoId: "ty5eI_ZU0UY"},
     {title: "Counting Sheep", videoId: "YoQJhjO-5vg"},
     {title: "Double Trouble", videoId: "5wkF6eLG8uk"},
@@ -56,7 +55,6 @@ window.theRestOfLevel2 = [
     {title: "Ten Again", videoId: "xd4KfYY_fCs"},
     {title: "Flatland", videoId: "YA9sJ1RIdu0"},
     {title: "Pattern Palace", videoId: "Ev0TbEfkMCU"},
-    {title: "The Way of the Rectangle", videoId: "PcCXuqmvfWM"},
 
 /*
     {title: "The Legend of Big Tum", videoId: ""},
@@ -74,6 +72,18 @@ window.theRestOfLevel2 = [
     {title: "", videoId: ""}, 
 */
 ];
+
+window.theRestOfLevel3 = [
+    {title: "The Way of the Rectangle", videoId: "PcCXuqmvfWM"},
+    {title: "Ride the Rays", videoId: "XnMPuxDtrbE"}, 
+    {title: "Step Squads", videoId: "Y4Fx3z5fAWY"}, 
+    {title: "Balancing Bridge", videoId: "Zk7Z7jCWun8"}, 
+    {title: "Blockstars", videoId: "https://youtu.be/myDRecuhRgk"}, 
+    // {title: "", videoId: ""}, 
+    
+];
+
+
 
 window.episodes11to100 = [
     {title: "11. Eleven", videoId: "TozH7t_cymc"},

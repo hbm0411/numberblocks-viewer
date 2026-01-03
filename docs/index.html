@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css?v=1.0.7">
+    <link rel="stylesheet" href="assets/css/style.css?v=1.0.8">
     <script src="https://www.youtube.com/iframe_api"></script>
 </head>
 <body>
@@ -34,6 +34,7 @@
             <button class="tab-links" onclick="openTab(event, 'Episodes1to10')" id="defaultOpen">1-10 Episodes</button>
             <button class="tab-links" onclick="openTab(event, 'TheRestOfLevel1')">Level 1</button>
             <button class="tab-links" onclick="openTab(event, 'TheRestOfLevel2')">Level 2</button>
+            <button class="tab-links" onclick="openTab(event, 'TheRestOfLevel3')">Level 3</button>
             <button class="tab-links" onclick="openTab(event, 'Episodes11to100')">11-100 Episodes</button>
             <button class="tab-links" onclick="openTab(event, 'SpecialAdventures')">🌟</button>
             
@@ -48,6 +49,9 @@
         </div>
         <div id="TheRestOfLevel2" class="tab-content">
             <div class="grid-container" id="grid-level2"></div>
+        </div>
+        <div id="TheRestOfLevel3" class="tab-content">
+            <div class="grid-container" id="grid-level3"></div>
         </div>
         <div id="Episodes11to100" class="tab-content">
             <div class="grid-container" id="grid-11to100"></div>
@@ -79,7 +83,7 @@
 <script>
 // 스마트 캐시 관리 스크립트
 (function() {
-    const CURRENT_VERSION = '1.0.7';
+    const CURRENT_VERSION = '1.0.8';
     const STORAGE_KEY = 'numberblocks_version';
     
     // 저장된 버전 확인
@@ -134,9 +138,9 @@
     checkAndReload();
 })();
 </script>
-<script src="assets/js/episode-data.js?v=1.0.7"></script>
-<script src="assets/js/common.js?v=1.0.7"></script>
-<script src="assets/js/iframe-mode.js?v=1.0.7"></script>
+<script src="assets/js/episode-data.js?v=1.0.8"></script>
+<script src="assets/js/common.js?v=1.0.8"></script>
+<script src="assets/js/iframe-mode.js?v=1.0.8"></script>
 
 </body>
 </html>
