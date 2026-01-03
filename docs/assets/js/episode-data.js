@@ -78,7 +78,7 @@ window.theRestOfLevel3 = [
     {title: "Ride the Rays", videoId: "XnMPuxDtrbE"}, 
     {title: "Step Squads", videoId: "Y4Fx3z5fAWY"}, 
     {title: "Balancing Bridge", videoId: "Zk7Z7jCWun8"}, 
-    {title: "Blockstars", videoId: "https://youtu.be/myDRecuhRgk"}, 
+    {title: "Blockstars", videoId: "myDRecuhRgk"}, 
     // {title: "", videoId: ""}, 
     
 ];
