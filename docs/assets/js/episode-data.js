@@ -79,6 +79,7 @@ window.theRestOfLevel3 = [
     {title: "Step Squads", videoId: "Y4Fx3z5fAWY"}, 
     {title: "Balancing Bridge", videoId: "Zk7Z7jCWun8"}, 
     {title: "Blockstars", videoId: "myDRecuhRgk"}, 
+    {title: "What's the Difference?", videoId: "qUPuXtHd64A"}, 
     // {title: "", videoId: ""}, 
     
 ];
