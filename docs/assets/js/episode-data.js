@@ -80,6 +80,7 @@ window.theRestOfLevel3 = [
     {title: "Balancing Bridge", videoId: "Zk7Z7jCWun8"}, 
     {title: "Blockstars", videoId: "myDRecuhRgk"}, 
     {title: "What's the Difference?", videoId: "qUPuXtHd64A"}, 
+    {title: "Now We Are Six to Ten", videoId: "uAuf7o4AkeA"}, 
     // {title: "", videoId: ""}, 
     
 ];
