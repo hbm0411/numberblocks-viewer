@@ -3,10 +3,17 @@ function openInIframe(ep) {
     const fullscreenContainer = document.createElement('div');
     fullscreenContainer.className = 'video-wrapper';
 
+    // endTime 체크를 위한 interval ID 저장 (전역 스코프)
+    let endTimeCheckInterval = null;
+    
     const closeButton = document.createElement('button');
     closeButton.textContent = '×';
     closeButton.className = 'close-button';
     closeButton.addEventListener('click', () => {
+        if (endTimeCheckInterval) {
+            clearInterval(endTimeCheckInterval);
+            endTimeCheckInterval = null;
+        }
         if (document.fullscreenElement) {
             document.exitFullscreen().catch(console.error);
         }
@@ -41,6 +48,16 @@ function openInIframe(ep) {
             enablejsapi: 1  // JavaScript API 활성화
         };
         
+        // startTime이 있으면 시작 시간 설정
+        if (ep.startTime !== undefined && ep.startTime !== null) {
+            playerVars.start = ep.startTime;
+        }
+        
+        // endTime이 있으면 종료 시간 설정
+        if (ep.endTime !== undefined && ep.endTime !== null) {
+            playerVars.end = ep.endTime;
+        }
+        
         // 로컬 파일 시스템이 아닌 경우에만 origin 설정
         if (currentOrigin !== 'null' && currentOrigin !== 'file://') {
             playerVars.origin = currentOrigin;
@@ -51,6 +68,32 @@ function openInIframe(ep) {
             playerVars: playerVars,
             events: {
                 'onReady': function (event) {
+                    const player = event.target;
+                    
+                    // endTime이 있으면 주기적으로 체크
+                    if (ep.endTime !== undefined && ep.endTime !== null) {
+                        endTimeCheckInterval = setInterval(() => {
+                            try {
+                                const currentTime = player.getCurrentTime();
+                                if (currentTime >= ep.endTime) {
+                                    // endTime에 도달하면 정지하고 닫기
+                                    player.stopVideo();
+                                    clearInterval(endTimeCheckInterval);
+                                    endTimeCheckInterval = null;
+                                    if (document.fullscreenElement) {
+                                        document.exitFullscreen().catch(console.error);
+                                    }
+                                    fullscreenContainer.remove();
+                                }
+                            } catch (error) {
+                                // 플레이어가 준비되지 않았거나 오류가 발생한 경우 interval 정리
+                                console.log('재생 시간 확인 중 오류:', error);
+                                clearInterval(endTimeCheckInterval);
+                                endTimeCheckInterval = null;
+                            }
+                        }, 500); // 0.5초마다 체크
+                    }
+                    
                     // 사용자 상호작용 후 재생 시작 (권한 정책 준수)
                     setTimeout(() => {
                         try {
@@ -85,6 +128,10 @@ function openInIframe(ep) {
                 'onStateChange': function (event) {
                     if (event.data === YT.PlayerState.ENDED) {
                         // 영상이 끝나면 닫기
+                        if (endTimeCheckInterval) {
+                            clearInterval(endTimeCheckInterval);
+                            endTimeCheckInterval = null;
+                        }
                         if (document.fullscreenElement) {
                             document.exitFullscreen().catch(console.error);
                         }
@@ -93,6 +140,11 @@ function openInIframe(ep) {
                 },
                 'onError': function (event) {
                     console.error('YouTube 플레이어 에러:', event.data);
+                    // 에러 발생 시 interval 정리
+                    if (endTimeCheckInterval) {
+                        clearInterval(endTimeCheckInterval);
+                        endTimeCheckInterval = null;
+                    }
                     // 에러 발생 시 사용자에게 알림
                     const errorDiv = document.createElement('div');
                     errorDiv.style.cssText = `
