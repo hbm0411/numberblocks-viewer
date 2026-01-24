@@ -118,6 +118,7 @@ window.specialAdventures = [
     {title: "8. Super Eights Assemble", videoId: "kC5C1mx7pto"}, 
     {title: "9. Nine's Time to Shine", videoId: "qbjaIN2xrx4"}, 
     {title: "10. Heroes with Zeroes", videoId: "mtcTEOWcPTA"}, 
+    {title: "Happy Birthday to you", videoId: "bXg6Nev6mi8", endTime: 86},
 ];
 
 window.peppaPigEpisodes = {
