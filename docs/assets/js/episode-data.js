@@ -119,6 +119,7 @@ window.specialAdventures = [
     {title: "9. Nine's Time to Shine", videoId: "qbjaIN2xrx4"}, 
     {title: "10. Heroes with Zeroes", videoId: "mtcTEOWcPTA"}, 
     {title: "Happy Birthday to you", videoId: "bXg6Nev6mi8", endTime: 86},
+    {title: "Learn to count all the way up to 100! - 1", videoId: "UVWOf1on8Po", endTime: 540}
 ];
 
 window.peppaPigEpisodes = {
