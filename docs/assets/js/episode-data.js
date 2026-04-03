@@ -87,7 +87,7 @@ window.theRestOfLevel3 = [
 
 
 
-window.episodes11to100 = [
+window.episodes11to1000 = [
     {title: "11. Eleven", videoId: "TozH7t_cymc"},
     {title: "12. Twelve", videoId: "TnCmfAdbWv8"},
     {title: "13. Thirteen", videoId: "oaKd5Q9HLIQ"},
@@ -104,6 +104,7 @@ window.episodes11to100 = [
     {title: "50. Fifty", videoId: "cZO74TaoOWs"}, // sing-along
     {title: "60. Sixty's High Score", videoId: "unPI3HruIWE"},
     {title: "100. One Hundred", videoId: "l9-liPFndl8"},
+    {title: "1000. One Thousand and One", videoId: "GQ6B7hwlJio"},
 ];
 
 window.specialAdventures = [
