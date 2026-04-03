@@ -55,10 +55,10 @@ window.theRestOfLevel2 = [
     {title: "Ten Again", videoId: "xd4KfYY_fCs"},
     {title: "Flatland", videoId: "YA9sJ1RIdu0"},
     {title: "Pattern Palace", videoId: "Ev0TbEfkMCU"},
+    {title: "Mirror, Mirror", videoId: "D-w6zSAAlkk"},
 
 /*
     {title: "The Legend of Big Tum", videoId: ""},
-    {title: "Mirror, Mirror", videoId: ""},
     {title: "The Wrong Number", videoId: ""}, 
     {title: "Leap Blob", videoId: ""}, 
     {title: "Ice and Dice", videoId: ""}, 
