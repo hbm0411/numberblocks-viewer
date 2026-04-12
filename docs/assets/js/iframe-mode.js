@@ -9,6 +9,7 @@ function openInIframe(ep) {
     const closeButton = document.createElement('button');
     closeButton.textContent = '×';
     closeButton.className = 'close-button';
+    closeButton.setAttribute('aria-label', '동영상 닫기');
     closeButton.addEventListener('click', () => {
         if (endTimeCheckInterval) {
             clearInterval(endTimeCheckInterval);

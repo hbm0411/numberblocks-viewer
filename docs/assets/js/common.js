@@ -24,6 +24,7 @@ window.renderEpisodes = function (episodes, containerId, onCardClick) {
         const img = document.createElement('img');
         img.src = `https://img.youtube.com/vi/${ep.videoId}/hqdefault.jpg`;
         img.alt = ep.title;
+        img.loading = 'lazy';
         card.appendChild(img);
 
         const caption = document.createElement('div');
@@ -75,8 +76,18 @@ window.initSeriesMenu = function () {
     showSeries('numberblocks');
 };
 
+// 탭 버튼 이벤트 바인딩
+window.initTabs = function () {
+    document.querySelectorAll('.tab-links[data-tab]').forEach(function (btn) {
+        btn.addEventListener('click', function (evt) {
+            openTab(evt, btn.dataset.tab);
+        });
+    });
+};
+
 // DOMContentLoaded 시 초기화
 window.addEventListener('DOMContentLoaded', function () {
+    window.initTabs();
     if (document.querySelector('.series-btn')) {
         window.initSeriesMenu();
     }
