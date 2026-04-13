@@ -9,80 +9,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css?v=1.0.13">
+    <link rel="stylesheet" href="assets/css/style.css?v=c1804b80">
     <script src="https://www.youtube.com/iframe_api"></script>
 </head>
 <body>
 
-<!-- 사이드 메뉴 Start -->
 <nav class="side-nav" aria-label="시리즈 선택">
-    <ul>
-        <li><button class="series-btn" data-series="numberblocks" aria-label="NumberBlocks 시리즈 보기">
-            <img src="numberblocks-logo.png" alt="NumberBlocks 로고" class="side-logo" />
-        </button></li>
-        <li><button class="series-btn" data-series="peppapig" aria-label="Peppa Pig 시리즈 보기">
-            <img src="peppa-pig-logo.jpg" alt="Peppa Pig 로고" class="side-logo" />
-        </button></li>
-    </ul>
+    <ul id="series-list"></ul>
 </nav>
-<!-- 사이드 메뉴 End -->
 
-<div class="main-content" id="main-content">
-    <div id="numberblocks-section">
-        <!-- 탭 버튼 Start -->
-        <div class="tab">
-            <button class="tab-links" data-tab="Episodes1to10" id="defaultOpen">1-10 Episodes</button>
-            <button class="tab-links" data-tab="TheRestOfLevel1">Level 1</button>
-            <button class="tab-links" data-tab="TheRestOfLevel2">Level 2</button>
-            <button class="tab-links" data-tab="TheRestOfLevel3">Level 3</button>
-            <button class="tab-links" data-tab="Episodes11to1000">11-1000 Episodes</button>
-            <button class="tab-links" data-tab="SpecialAdventures">🌟</button>
-        </div>
-        <!-- 탭 버튼 End -->
-        <!-- 탭 별 카드 Start -->
-        <div id="Episodes1to10" class="tab-content">
-            <div class="grid-container" id="grid-1to10"></div>
-        </div>
-        <div id="TheRestOfLevel1" class="tab-content">
-            <div class="grid-container" id="grid-level1"></div>
-        </div>
-        <div id="TheRestOfLevel2" class="tab-content">
-            <div class="grid-container" id="grid-level2"></div>
-        </div>
-        <div id="TheRestOfLevel3" class="tab-content">
-            <div class="grid-container" id="grid-level3"></div>
-        </div>
-        <div id="Episodes11to1000" class="tab-content">
-            <div class="grid-container" id="grid-11to1000"></div>
-        </div>
-        <div id="SpecialAdventures" class="tab-content">
-            <div class="grid-container" id="grid-special-adventures"></div>
-        </div>
-        <footer class="site-footer">
-            Based on <a href="https://www.learningblocks.tv/numberblocks/episodes" target="_blank" rel="noopener noreferrer">
-            NumberBlocks official page</a>
-        </footer>
-        
-    </div>
-    <div id="peppa-section" style="display:none;">
-        <div class="tab">
-            <button class="tab-links active" data-tab="PeppaSeason1" id="peppaDefaultOpen">Season 1</button>
-        </div>
-        <div id="PeppaSeason1" class="tab-content" style="display:block;">
-            <div class="grid-container" id="grid-peppa1"></div>
-        </div>
-        <footer class="site-footer">
-            Based on 
-            <a href="https://www.youtube.com/@PeppaPigOfficial" target="_blank" rel="noopener noreferrer">Peppa Pig Official page</a> and
-            <a href="https://www.youtube.com/@George Pig" target="_blank" rel="noopener noreferrer">George Pig page</a>
-        </footer>
-    </div>
-</div>
+<div class="main-content" id="main-content"></div>
 
 <script>
 // 스마트 캐시 관리 스크립트
 (function() {
-    const CURRENT_VERSION = '1.0.13';
+    const CURRENT_VERSION = 'c1804b80';
     const STORAGE_KEY = 'numberblocks_version';
     
     // 저장된 버전 확인
@@ -138,9 +79,9 @@
     checkAndReload();
 })();
 </script>
-<script src="assets/js/episode-data.js?v=1.0.13"></script>
-<script src="assets/js/common.js?v=1.0.13"></script>
-<script src="assets/js/iframe-mode.js?v=1.0.13"></script>
+<script src="assets/js/episode-data.js?v=c1804b80"></script>
+<script src="assets/js/common.js?v=c1804b80"></script>
+<script src="assets/js/iframe-mode.js?v=c1804b80"></script>
 
 </body>
 </html>
