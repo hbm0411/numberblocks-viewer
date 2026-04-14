@@ -1,41 +1,30 @@
-window.openTab = function (evt, tabName) {
-    var section = evt.currentTarget.closest('.series-section');
-    if (!section) return;
-    section.querySelectorAll('.tab-content').forEach(function (el) { el.style.display = 'none'; });
-    section.querySelectorAll('.tab-links').forEach(function (el) { el.classList.remove('active'); });
-    document.getElementById(tabName).style.display = 'block';
-    evt.currentTarget.classList.add('active');
-};
-
-window.renderEpisodes = function (episodes, containerId, onCardClick) {
-    const container = document.getElementById(containerId);
+window.renderEpisodes = function (episodes, container, onCardClick) {
     if (!container) return;
-    container.innerHTML = '';
 
-    episodes.forEach(ep => {
-        const card = document.createElement('div');
+    episodes.forEach(function (ep) {
+        var card = document.createElement('div');
         card.className = 'thumbnail-card';
 
-        const img = document.createElement('img');
-        img.src = `https://img.youtube.com/vi/${ep.videoId}/hqdefault.jpg`;
+        var img = document.createElement('img');
+        img.src = 'https://img.youtube.com/vi/' + ep.videoId + '/hqdefault.jpg';
         img.alt = ep.title;
         img.loading = 'lazy';
         card.appendChild(img);
 
-        const caption = document.createElement('div');
+        var caption = document.createElement('div');
         caption.className = 'caption';
         caption.textContent = ep.title;
         card.appendChild(caption);
 
-        card.addEventListener('click', () => onCardClick(ep));
+        card.addEventListener('click', function () { onCardClick(ep); });
 
         container.appendChild(card);
     });
 };
 
 window.renderApp = function (seriesData, onCardClick) {
-    const seriesList = document.getElementById('series-list');
-    const mainContent = document.getElementById('main-content');
+    var seriesList = document.getElementById('series-list');
+    var mainContent = document.getElementById('main-content');
     if (!seriesList || !mainContent) return;
 
     seriesList.innerHTML = '';
@@ -62,31 +51,22 @@ window.renderApp = function (seriesData, onCardClick) {
         section.className = 'series-section';
         if (index > 0) section.style.display = 'none';
 
-        // 탭 버튼
-        var tabBar = document.createElement('div');
-        tabBar.className = 'tab';
-        series.tabs.forEach(function (tab, tabIndex) {
-            var tabBtn = document.createElement('button');
-            tabBtn.className = 'tab-links';
-            tabBtn.dataset.tab = tab.id;
-            tabBtn.textContent = tab.label;
-            tabBtn.addEventListener('click', function (evt) {
-                openTab(evt, tab.id);
-            });
-            tabBar.appendChild(tabBtn);
-        });
-        section.appendChild(tabBar);
-
-        // 탭 콘텐츠
+        // 카테고리별 가로 스크롤 행
         series.tabs.forEach(function (tab) {
-            var tabContent = document.createElement('div');
-            tabContent.id = tab.id;
-            tabContent.className = 'tab-content';
-            var grid = document.createElement('div');
-            grid.className = 'grid-container';
-            grid.id = 'grid-' + tab.id;
-            tabContent.appendChild(grid);
-            section.appendChild(tabContent);
+            var row = document.createElement('div');
+            row.className = 'category-row';
+
+            var title = document.createElement('div');
+            title.className = 'category-title';
+            title.textContent = tab.label;
+            row.appendChild(title);
+
+            var scroll = document.createElement('div');
+            scroll.className = 'category-scroll';
+            renderEpisodes(tab.episodes, scroll, onCardClick);
+            row.appendChild(scroll);
+
+            section.appendChild(row);
         });
 
         // 푸터
@@ -101,11 +81,6 @@ window.renderApp = function (seriesData, onCardClick) {
         section.appendChild(footer);
 
         mainContent.appendChild(section);
-
-        // 에피소드 카드 렌더링
-        series.tabs.forEach(function (tab) {
-            renderEpisodes(tab.episodes, 'grid-' + tab.id, onCardClick);
-        });
     });
 
     // 시리즈 메뉴 초기화
@@ -122,14 +97,7 @@ window.initSeriesMenu = function () {
         if (activeBtn) activeBtn.classList.add('active');
 
         sections.forEach(function (sec) {
-            if (sec.id === seriesId + '-section') {
-                sec.style.display = '';
-                // 첫 번째 탭 자동 선택
-                var firstTab = sec.querySelector('.tab-links');
-                if (firstTab) firstTab.click();
-            } else {
-                sec.style.display = 'none';
-            }
+            sec.style.display = (sec.id === seriesId + '-section') ? '' : 'none';
         });
     }
 
@@ -139,7 +107,6 @@ window.initSeriesMenu = function () {
         });
     });
 
-    // 첫 번째 시리즈가 기본
     if (window.seriesData && window.seriesData.length > 0) {
         showSeries(window.seriesData[0].id);
     }
