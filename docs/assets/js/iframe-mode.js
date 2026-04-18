@@ -38,7 +38,7 @@ function openInIframe(ep) {
         
         // playerVars 객체 생성
         const playerVars = {
-            autoplay: 0,  // 자동재생 비활성화 (권한 정책 준수)
+            autoplay: 1,  // 자동재생 활성화
             modestbranding: 0,  // 브랜딩 표시 (안정성 향상)
             rel: 0,  // 관련 동영상 비표시
             controls: 1,  // 컨트롤 표시
