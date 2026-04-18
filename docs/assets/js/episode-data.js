@@ -146,7 +146,11 @@ window.seriesData = [
                     {title: "9. Nine's Time to Shine", videoId: "qbjaIN2xrx4"},
                     {title: "10. Heroes with Zeroes", videoId: "mtcTEOWcPTA"},
                     {title: "Happy Birthday to you", videoId: "bXg6Nev6mi8", endTime: 86},
-                    {title: "Learn to count all the way up to 100! - 1", videoId: "UVWOf1on8Po", endTime: 540}
+                    {title: "Learn to count all the way up to 100! - 1", videoId: "UVWOf1on8Po", endTime: 540},
+                    {title: "ABOUT TIME ⏰", videoId: "QEMeFHkpYDw"},
+                    {title: "Fractions Are a Piece of Cake", videoId: "wsnJtCloGf0"},
+                    {title: "Three's Counting Car Song", videoId: "6hE-sz3xUfk"},
+                    {title: "More to Explore", videoId: "KzTR72_srTU"},
                 ]
             }
         ]
