@@ -151,6 +151,7 @@ window.seriesData = [
                     {title: "Fractions Are a Piece of Cake", videoId: "wsnJtCloGf0"},
                     {title: "Three's Counting Car Song", videoId: "6hE-sz3xUfk"},
                     {title: "More to Explore", videoId: "KzTR72_srTU"},
+                    {title: "One Giant Step Squad", videoId: "ZoSlJaVaeDI"},
                 ]
             }
         ]
