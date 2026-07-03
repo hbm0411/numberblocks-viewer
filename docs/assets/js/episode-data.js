@@ -239,10 +239,13 @@ window.seriesData = [
         tabs: [
             {
                 id: 'BlueyEpisodes',
-                label: 'Episodes',
+                label: 'Episodes Season 1',
+                // https://www.youtube.com/playlist?list=PLbtUQWldWkKjU-Xo1hgBKLVpxnAddy7a7
                 episodes: [
-                    {title: "1. Magic Asparagus", videoId: "Q-K4TCO7Lp8"},
-                    {title: "2. Hotel & Asparagus", videoId: "5t9Rvrtc-Xc"},
+                    {title: "Sharing is Caring", videoId: "DklpM_lZIOU"},
+                    {title: "Watch out for the Magic Asparagus", videoId: "mBNrdanTs3A"},
+                    {title: "Don't Dream it, be it!", videoId: "ohmc2CXJpZc"},
+                    {title: "Raiders!", videoId: "rKTkYi2J6BY"},
                 ]
             }
         ]
