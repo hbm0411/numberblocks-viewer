@@ -227,5 +227,24 @@ window.seriesData = [
                 ]
             }
         ]
+    },
+    {
+        id: 'bluey',
+        name: 'Bluey',
+        logo: 'bluey-logo.jpg',
+        footer: {
+            text: 'Based on Bluey',
+            links: []
+        },
+        tabs: [
+            {
+                id: 'BlueyEpisodes',
+                label: 'Episodes',
+                episodes: [
+                    {title: "1. Magic Asparagus", videoId: "Q-K4TCO7Lp8"},
+                    {title: "2. Hotel & Asparagus", videoId: "5t9Rvrtc-Xc"},
+                ]
+            }
+        ]
     }
 ];
