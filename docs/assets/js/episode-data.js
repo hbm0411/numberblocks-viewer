@@ -246,6 +246,11 @@ window.seriesData = [
                     {title: "Watch out for the Magic Asparagus", videoId: "mBNrdanTs3A"},
                     {title: "Don't Dream it, be it!", videoId: "ohmc2CXJpZc"},
                     {title: "Raiders!", videoId: "rKTkYi2J6BY"},
+                    {title: "Doctor Bluey and Nurse Bingo", videoId: "-O8auHk2RTU"},
+                    {title: "Bandit, Bluey and Bingo go to the Pool", videoId: "RDYe2vL0oVM"},
+                    {title: "Muffin Madness!", videoId: "8Rr_yfpG2UE"},
+                    {title: "Don't Make Friends with Salad", videoId: "SgiMXXMHmyk"},
+                    {title: "Domestic Dog Life", videoId: "u6D2ucvSas0"},
                 ]
             }
         ]
