@@ -238,10 +238,11 @@ window.seriesData = [
         },
         tabs: [
             {
-                id: 'BlueyEpisodes',
-                label: 'Episodes Season 1',
+                id: 'BlueyEpisodes1to12',
+                label: 'Season 1 Episodes 1-12',
                 // https://www.youtube.com/playlist?list=PLbtUQWldWkKjU-Xo1hgBKLVpxnAddy7a7
                 episodes: [
+                    {title: "Tickling the giant mountain!", videoId: "BUCbLGDAlP8"},
                     {title: "Sharing is Caring", videoId: "DklpM_lZIOU"},
                     {title: "Watch out for the Magic Asparagus", videoId: "mBNrdanTs3A"},
                     {title: "Don't Dream it, be it!", videoId: "ohmc2CXJpZc"},
@@ -251,8 +252,94 @@ window.seriesData = [
                     {title: "Muffin Madness!", videoId: "8Rr_yfpG2UE"},
                     {title: "Don't Make Friends with Salad", videoId: "SgiMXXMHmyk"},
                     {title: "Domestic Dog Life", videoId: "u6D2ucvSas0"},
+                    {title: "It's a Boy! No Wait, it's a Girl!", videoId: "2LABDzZPSYg"},
+                    {title: "Missing Mum", videoId: "5ZeTlI1kINE"},
                 ]
-            }
+            },
+            // {
+            //     id: 'BlueyEpisodes13to24',
+            //     label: 'Season 1 Episodes 13-24',
+            //     episodes: [
+            //         {title: "Checking in to Hotel Bluey", videoId: "1d6LEnCW99g"},
+            //         {title: "Introducing Sharralanda and Dennis", videoId: "LahFbPqmL8E"},
+            //         {title: "Bouncy Bingo and Bluey", videoId: "6mCWrDhcq_k"},
+            //         {title: "Discovering Somewhere New", videoId: "dmaNzUuyNZo"},
+            //         {title: "The Statue Game", videoId: "R3zUEHtlhMI"},
+            //         {title: "A Horsey Wedding", videoId: "JXvS4VIE0S0"},
+            //         {title: "It's a bushwee!", videoId: "jcS7CqrCCyA"},
+            //         {title: "Christmas Mischief", videoId: "PZWdJKzBCwA"},
+            //         {title: "Bluey and Bingo climb Mount Mumandad!", videoId: "ptgpgpfrqO8"},
+            //         {title: "Doctor Bingo", videoId: "11CAN1zf8Sw"},
+            //         {title: "Stop Copying Me!", videoId: "kMLNW9V1r4w"},
+            //         {title: "The Creek is Beautiful", videoId: "QtfLAyxUQpA"},
+            //     ]
+            // },
+            // {
+            //     id: 'BlueyEpisodes25to36',
+            //     label: 'Season 1 Episodes 25-36',
+            //     episodes: [
+            //         {title: "Who's Your Favourite?", videoId: "uDDkjHeHe4o"},
+            //         {title: "Finding Floppy", videoId: "MTrnu_61gtc"},
+            //         {title: "We've Got Company!", videoId: "Pa8D_v9eqzo"},
+            //         {title: "Backpacking with Bluey", videoId: "__goDFrrfbM"},
+            //         {title: "The Perfect Purchase", videoId: "beg53kyVQPk"},
+            //         {title: "Bluey and Bingo's Trip to the Zoo", videoId: "r139eGFb83c"},
+            //         {title: "What will Bluey buy with her dollar bucks from the tooth fairy?", videoId: "XLRn6ZR_58U"},
+            //         {title: "Bandit's Ballet Blues", videoId: "2lSOA-BdPYw"},
+            //         {title: "You Can't Change the Rules, Coco!", videoId: "M97M8iwOSRw"},
+            //         {title: "Dad's a Big Teaser!", videoId: "4Go1uc8dzsk"},
+            //         {title: "Runaway Horse", videoId: "XoOT9MhG5YI"},
+            //         {title: "Bluey's First Bike Ride", videoId: "qxXUTdqbI6M"},
+            //     ]
+            // },
+            // {
+            //     id: 'BlueyEpisodes37to48',
+            //     label: 'Season 1 Episodes 37-48',
+            //     episodes: [
+            //         {title: "The fish and chip shop is open!", videoId: "n08iD6teRuU"},
+            //         {title: "Keepy Uppy Experts", videoId: "oHIKWpZrULE"},
+            //         {title: "Princess Bluey and Honey Horse go on an Adventure!", videoId: "9-EKpcNEO9U"},
+            //         {title: "Silly Sat-Nav", videoId: "gdce0KeAeoc"},
+            //         {title: "Bluey and Bingo become neighbours", videoId: "MKgFesnXF28"},
+            //         {title: "Barnicus and Bumpy", videoId: "2IQIex5HpMk"},
+            //         {title: "I Like Stinky", videoId: "lwwc8lj0bT8"},
+            //         {title: "Bluey and Bingo Play the Claw Game!", videoId: "zqExJdPYu00"},
+            //         {title: "Chattermax Tea Party", videoId: "IaW4YWuEBPY"},
+            //         {title: "A Storm Brews", videoId: "joCZe27z8PY"},
+            //         {title: "Agent Heeler", videoId: "vqamb2o-6Ps"},
+            //         {title: "Will Bluey find Jean Luc?", videoId: "W8PpJFlgXA8"},
+            //     ]
+            // },
+            // {
+            //     id: 'BlueyEpisodes49to60',
+            //     label: 'Season 1 Episodes 49-60',
+            //     episodes: [
+            //         {title: "Working Together", videoId: "EOb_UsPTaqA"},
+            //         {title: "When Things Don't Go To Plan", videoId: "D-jb2QoX7pg"},
+            //         {title: "Can Grannies Floss?", videoId: "Uyz2K6s7wC4"},
+            //         {title: "Bluey and Bingo Take Shaun for walkies", videoId: "P1_BRBJ67lk"},
+            //         {title: "Bluey Gets STUCK in Cobwebs!", videoId: "Re2i8fq22zk"},
+            //         {title: "Bluey's Beach Bravery", videoId: "dMZFUiuSnv8"},
+            //         {title: "Swallowed by a Whale!", videoId: "0PXY_OKwIYU"},
+            //         {title: "Cheeky Chattermax", videoId: "tPZlU5hlLFA"},
+            //         {title: "Daddy Robot cleans the playroom", videoId: "OjCoY1656TA"},
+            //         {title: "Bluey's Bookclub", videoId: "NWHBp-eneD0"},
+            //         {title: "Ready for an adventure Bob?", videoId: "1CywGkpUOAk"},
+            //         {title: "Mermaid Found her Legs!", videoId: "3z0tlmiAVgY"},
+            //     ]
+            // },
+            // {
+            //     id: 'BlueyEpisodes61to66',
+            //     label: 'Season 1 Episodes 61-66',
+            //     episodes: [
+            //         {title: "Why Puppies Don't Drive", videoId: "E79SWRpVYsU"},
+            //         {title: "Meow!", videoId: "ppBbGvmuY3Y"},
+            //         {title: "Bluey, Snickers, and Coco Race for the Cupcakes!", videoId: "k86e8p88mqE"},
+            //         {title: "Underwater Tea Party", videoId: "ogqn4ZZ1sSE"},
+            //         {title: "Christmas Please Face", videoId: "DEX-2Nt9Lg0"},
+            //         {title: "Meet Bingo!", videoId: "1aFw8mNAifA"},
+            //     ]
+            // }
         ]
     }
 ];
